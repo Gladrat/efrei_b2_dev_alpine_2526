@@ -12,17 +12,23 @@
     </style>
   </head>
   <body>
-    <div>
+    <nav>
+      <button onclick="changePage('product01')">Product 01</button>
+      <button onclick="changePage('product02')">Product 02</button>
+      <button onclick="changePage('cart')">Cart</button>
+    </nav>
+
+    <div id="product01" class="page">
       <h1>Product 01</h1>
       <button class="add" id="product_01">Add to cart</button>
     </div>
 
-    <div class="hidden">
+    <div id="product02" class="hidden page">
       <h1>Product 02</h1>
       <button class="add" id="product_02">Add to cart</button>
     </div>
 
-    <div class="hidden">
+    <div id="cart" class="hidden page">
       <h1>Cart</h1>
       <button class="show-cart">Show Cart</button>
     </div>
