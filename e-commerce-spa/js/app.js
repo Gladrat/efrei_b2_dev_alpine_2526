@@ -1,3 +1,7 @@
-function changePage(page) {
-  // Le clic sur un bouton affiche la div correspondante et masque les autres
+function changePage(idPage) {
+  // const pages = document.querySelectorAll(".page");
+  // pages.forEach((p) => p.classList.add("hidden"));
+
+  document.querySelectorAll(".page").forEach((p) => p.classList.add("hidden"));
+  document.querySelector("#" + idPage).classList.remove("hidden");
 }
